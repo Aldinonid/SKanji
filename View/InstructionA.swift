@@ -18,7 +18,7 @@ struct InstructionA: View {
 				Text("There will be 10 \nmutiple choice \nquestions")
 					.multilineTextAlignment(.center)
 				
-				// Later will change this until all view for instruction already created
+				 //Later will change this until all view for instruction already created
 				
 //				TabView(selection: $currentIndex) {
 //					ForEach(0..<colors.count, id: \.self) { index in
@@ -130,5 +130,9 @@ struct Step4: View{
 struct InstructionA_Previews: PreviewProvider {
     static var previews: some View {
 			InstructionA()
+            Step2()
+            Step3()
+            Step4()
+        
     }
 }
