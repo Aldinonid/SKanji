@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A533105926D0CCB000681562 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A533105826D0CCB000681562 /* Home.swift */; };
+		A533105B26D0D8C200681562 /* InstructionA.swift in Sources */ = {isa = PBXBuildFile; fileRef = A533105A26D0D8C200681562 /* InstructionA.swift */; };
 		A567932E26CF544C00167DAC /* SKanji WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A567932D26CF544C00167DAC /* SKanji WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A567933326CF544C00167DAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A567933226CF544C00167DAC /* Assets.xcassets */; };
 		A567933A26CF544D00167DAC /* SKanji WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A567933926CF544D00167DAC /* SKanji WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -62,6 +64,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A533105826D0CCB000681562 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		A533105A26D0D8C200681562 /* InstructionA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionA.swift; sourceTree = "<group>"; };
 		A567932926CF544B00167DAC /* SKanji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKanji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A567932D26CF544C00167DAC /* SKanji WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SKanji WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A567933226CF544C00167DAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,9 +93,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A533105726D0CC9E00681562 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A533105826D0CCB000681562 /* Home.swift */,
+				A533105A26D0D8C200681562 /* InstructionA.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A567932226CF544B00167DAC = {
 			isa = PBXGroup;
 			children = (
+				A533105726D0CC9E00681562 /* View */,
 				A567933126CF544C00167DAC /* SKanji WatchKit App */,
 				A567933D26CF544D00167DAC /* SKanji WatchKit Extension */,
 				A567932A26CF544B00167DAC /* Products */,
@@ -269,6 +283,8 @@
 			files = (
 				A567934326CF544D00167DAC /* NotificationController.swift in Sources */,
 				A567934126CF544D00167DAC /* ContentView.swift in Sources */,
+				A533105926D0CCB000681562 /* Home.swift in Sources */,
+				A533105B26D0D8C200681562 /* InstructionA.swift in Sources */,
 				A567934726CF544D00167DAC /* ComplicationController.swift in Sources */,
 				A567933F26CF544D00167DAC /* SKanjiApp.swift in Sources */,
 				A567934526CF544D00167DAC /* NotificationView.swift in Sources */,
