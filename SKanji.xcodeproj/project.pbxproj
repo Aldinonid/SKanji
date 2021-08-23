@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6FB843B926D3F53D00472F68 /* Pause.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB843B826D3F53D00472F68 /* Pause.swift */; };
 		917262B526D13C4300561445 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917262B426D13C4300561445 /* Answer.swift */; };
 		A533105926D0CCB000681562 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A533105826D0CCB000681562 /* Home.swift */; };
 		A533105B26D0D8C200681562 /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A533105A26D0D8C200681562 /* Instruction.swift */; };
@@ -71,6 +72,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6FB843B826D3F53D00472F68 /* Pause.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pause.swift; sourceTree = "<group>"; };
 		917262B426D13C4300561445 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		A533105826D0CCB000681562 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		A533105A26D0D8C200681562 /* Instruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				A533105A26D0D8C200681562 /* Instruction.swift */,
 				A553A41A26D36302001C4C6B /* Result.swift */,
 				A553A41C26D413EA001C4C6B /* QuestionView.swift */,
+				6FB843B826D3F53D00472F68 /* Pause.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				A533105B26D0D8C200681562 /* Instruction.swift in Sources */,
 				A567934726CF544D00167DAC /* ComplicationController.swift in Sources */,
 				A567933F26CF544D00167DAC /* SKanjiApp.swift in Sources */,
+				6FB843B926D3F53D00472F68 /* Pause.swift in Sources */,
 				A533105E26D2070000681562 /* InstructionAnswer.swift in Sources */,
 				A553A41926D360A9001C4C6B /* Question.swift in Sources */,
 				A567934526CF544D00167DAC /* NotificationView.swift in Sources */,
@@ -558,7 +562,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YKQLRUN464;
+				DEVELOPMENT_TEAM = 46Z46S2G8M;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aldinonid.SKanji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -571,7 +575,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YKQLRUN464;
+				DEVELOPMENT_TEAM = 46Z46S2G8M;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aldinonid.SKanji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
