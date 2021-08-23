@@ -16,8 +16,7 @@ struct Home: View {
 						Spacer(minLength: 10)
 						
 						NavigationLink(
-							// Change the destination if question view already created
-							destination: Answer(),
+							destination: QuestionView(),
 							label: {
 								Text("Play")
 									.padding(.vertical, 10)
