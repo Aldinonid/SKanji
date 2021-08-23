@@ -48,6 +48,7 @@ struct Answer: View {
                                         .trim(from: 0, to: /*@START_MENU_TOKEN@*/1.0/*@END_MENU_TOKEN@*/)
                                         .stroke(Color.white.opacity(0.2), style: StrokeStyle(lineWidth: 3.8, lineCap: .round))
                                         .foregroundColor(Color(.blue))
+																	
                                     Text("\(self.count)")
                                         .font(.system(size: 30))
                                     

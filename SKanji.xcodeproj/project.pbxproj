@@ -13,6 +13,9 @@
 		A533105E26D2070000681562 /* InstructionAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A533105D26D2070000681562 /* InstructionAnswer.swift */; };
 		A533106026D2083800681562 /* AnswerMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A533105F26D2083800681562 /* AnswerMotion.swift */; };
 		A533106226D20EE400681562 /* AnswerDone.swift in Sources */ = {isa = PBXBuildFile; fileRef = A533106126D20EE400681562 /* AnswerDone.swift */; };
+		A553A41926D360A9001C4C6B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553A41826D360A9001C4C6B /* Question.swift */; };
+		A553A41B26D36302001C4C6B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553A41A26D36302001C4C6B /* Result.swift */; };
+		A553A41D26D413EA001C4C6B /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553A41C26D413EA001C4C6B /* QuestionView.swift */; };
 		A567932E26CF544C00167DAC /* SKanji WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A567932D26CF544C00167DAC /* SKanji WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A567933326CF544C00167DAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A567933226CF544C00167DAC /* Assets.xcassets */; };
 		A567933A26CF544D00167DAC /* SKanji WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A567933926CF544D00167DAC /* SKanji WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -74,6 +77,9 @@
 		A533105D26D2070000681562 /* InstructionAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionAnswer.swift; sourceTree = "<group>"; };
 		A533105F26D2083800681562 /* AnswerMotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerMotion.swift; sourceTree = "<group>"; };
 		A533106126D20EE400681562 /* AnswerDone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerDone.swift; sourceTree = "<group>"; };
+		A553A41826D360A9001C4C6B /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		A553A41A26D36302001C4C6B /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		A553A41C26D413EA001C4C6B /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		A567932926CF544B00167DAC /* SKanji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKanji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A567932D26CF544C00167DAC /* SKanji WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SKanji WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A567933226CF544C00167DAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,27 +110,38 @@
 		A533105726D0CC9E00681562 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A533105C26D206E100681562 /* InstructionDetails */,
+				A533105C26D206E100681562 /* Components */,
 				A533105826D0CCB000681562 /* Home.swift */,
 				917262B426D13C4300561445 /* Answer.swift */,
 				A533105A26D0D8C200681562 /* Instruction.swift */,
+				A553A41A26D36302001C4C6B /* Result.swift */,
+				A553A41C26D413EA001C4C6B /* QuestionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		A533105C26D206E100681562 /* InstructionDetails */ = {
+		A533105C26D206E100681562 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				A533105D26D2070000681562 /* InstructionAnswer.swift */,
 				A533105F26D2083800681562 /* AnswerMotion.swift */,
 				A533106126D20EE400681562 /* AnswerDone.swift */,
 			);
-			path = InstructionDetails;
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A553A41726D3609B001C4C6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A553A41826D360A9001C4C6B /* Question.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A567932226CF544B00167DAC = {
 			isa = PBXGroup;
 			children = (
+				A553A41726D3609B001C4C6B /* Model */,
 				A533105726D0CC9E00681562 /* View */,
 				A567933126CF544C00167DAC /* SKanji WatchKit App */,
 				A567933D26CF544D00167DAC /* SKanji WatchKit Extension */,
@@ -302,14 +319,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A533106226D20EE400681562 /* AnswerDone.swift in Sources */,
+				A553A41B26D36302001C4C6B /* Result.swift in Sources */,
 				A567934326CF544D00167DAC /* NotificationController.swift in Sources */,
 				A567934126CF544D00167DAC /* ContentView.swift in Sources */,
 				A533106026D2083800681562 /* AnswerMotion.swift in Sources */,
+				A553A41D26D413EA001C4C6B /* QuestionView.swift in Sources */,
 				A533105926D0CCB000681562 /* Home.swift in Sources */,
 				A533105B26D0D8C200681562 /* Instruction.swift in Sources */,
 				A567934726CF544D00167DAC /* ComplicationController.swift in Sources */,
 				A567933F26CF544D00167DAC /* SKanjiApp.swift in Sources */,
 				A533105E26D2070000681562 /* InstructionAnswer.swift in Sources */,
+				A553A41926D360A9001C4C6B /* Question.swift in Sources */,
 				A567934526CF544D00167DAC /* NotificationView.swift in Sources */,
 				917262B526D13C4300561445 /* Answer.swift in Sources */,
 			);
