@@ -29,7 +29,7 @@ struct Home: View {
 							.buttonStyle(PlainButtonStyle())
 						
 						NavigationLink(
-							destination: InstructionA(),
+							destination: Instruction(),
 							label: {
 								Text("Instructions")
 									.padding(.vertical, 10)
