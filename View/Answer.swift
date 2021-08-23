@@ -15,6 +15,12 @@ struct Answer: View {
     @State var count = 0
     @State var time = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
+    @State var timeRemaining = 10
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+
+   
+        
+    
     var body: some View {
         
         
@@ -42,13 +48,20 @@ struct Answer: View {
                                 
                                 
                                 ZStack{
-                                    
+                                                             
+                                                                        
                                     Circle()
                                         .scale(0.8)
                                         .trim(from: 0, to: /*@START_MENU_TOKEN@*/1.0/*@END_MENU_TOKEN@*/)
                                         .stroke(Color.white.opacity(0.2), style: StrokeStyle(lineWidth: 3.8, lineCap: .round))
                                         .foregroundColor(Color(.blue))
-                                    Text("\(self.count)")
+                                    Text("\(self.timeRemaining)")
+                                        .font(.system(size: 24))
+                                        .onReceive(timer) { _ in
+                                            if timeRemaining > 0 {
+                                                timeRemaining -= 1
+                                            }
+                                        }
                                         .font(.system(size: 30))
                                     
                                     Circle()
